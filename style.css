@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/*---------------------------home-------------------*/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header h2{
+    text-align:left;
+    padding-left: 210px;
+    color: rgb(218, 189, 189);
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav img{
+    width: 350px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 18px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(202, 149, 149);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.logo a{
+    color: rgb(218, 189, 189);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 100px
+    
+}
+.nav-links ul li a:hover::after{
+    color:rgb(202, 100, 100) ;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgb(221, 106, 125);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    color:rgb(182, 80, 97) ;
+
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+    font-weight: 600;
+    margin-left: -8px;
+
+}
+
+.text-box p{
+    margin: 20px 0 40px;
+    font-size:700;
+}
+
+.here-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(238, 229, 229);
+    padding: 12px 34px;
+    font-size: 13px;
+    background:rgb(148, 99, 99);
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.here-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(253, 247, 247);
+    padding: 12px 34px;
+    font-size: 13px;
+    background:rgb(20, 19, 19);
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.here-btn2:hover{
+
+    background:rgb(148, 99, 99);
+    color: rgb(250, 245, 245);
+    transition: 0.5s;
+}
+
+
+
+
+.here-btn:hover{
+    background:rgb(19, 17, 17);
+    color:rgb(245, 239, 239);
+    transition: 0.5s;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 15px 20px ;
+    background-color: rgb(182, 90, 90);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #f8f1f1;
+  }
+  
+nav .fa{
+    display: none;
+}
+
+
+
+
+
+
+ /*--------------------welcome to zippy----------------*/
+
+
+
+ .home{
+     height: 120vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(163, 89, 89, 0.7),rgba(155, 63, 83, 0.7)),url(img/banner2.jpg);
+
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: #f2f2f2;
+
+}
+.home p{
+    text-align:left;
+    padding: 50px 0 40px;
+    font-size: large;
+    font-weight: 400;
+
+
+}
+
+
+.row p{
+    color: rgb(250, 250, 250);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    margin-top:5%;
+
+}
+.welcome{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.row img{
+    height: 50px;
+}
+.welcome-row{
+    display: flex;
+    margin-top:5%;
+    justify-content:space-between;
+
+}
+.welcome-row img{
+    height: 200px;
+    
+   
+}
+.home-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    align-items: center;
+
+}
+.row h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0;
+    color:rgb(192, 185, 192);
+
+}
+.home-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+    
+    .welcome-row img{
+        height: 0px;
+    }
+}
+
+
+
+/*----------------------------project----------------*/
+
+
+
+
+.items{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background: rgb(22, 20, 20);
+}
+
+.items-col img{
+    width: 100%;
+    height: 400px;
+}
+
+.items-col p{
+    padding-left: 40px;
+    text-align: left;
+
+}
+.items-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 40px;
+    
+}
+
+
+.items-col{
+    flex-basis: 31%;
+    background: rgba(10, 10, 10, 0.918);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align:center;
+    padding-bottom: 30px;
+
+}
+
+.items-col:hover{
+    flex-basis: 31%;
+    background:rgb(161, 69, 81);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align:center;
+    padding-bottom: 30px;
+
+    
+}
+
+
+.here-btn3{
+    display: inline-block;
+    text-decoration: none;
+    color:rgba(5, 5, 5, 0.925);
+    padding: 12px 24px;
+    font-size: 15px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.here-btn3:hover{
+    border: 1px solid rgb(5, 3, 3);
+    background:rgb(165, 52, 57);    
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*--------------------------------pricing table-------------*/
+
+
+.home h4{
+    color: rgb(133, 132, 132);
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------life in zippy--------------*/
+
+.life h1{
+    text-align: center;
+    padding-top: 20px;
+    background: #000;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    background: rgb(199, 197, 197);
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 15px;
+    margin-top: -50px;
+    color: rgb(252, 248, 248);
+    background-color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(170, 168, 153, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+/*----------------------signup----------------------*/
+
+
+
+
+.signup{
+    min-height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 0px;
+    background: #000;
+}
+.signup h1{
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.signup input{
+    padding: 6px;
+    width: 400px;
+    text-align: left;
+}
+.signup a{
+    font-size: 10px;
+    font-weight: 400;
+}
+ here-btn here-btn2{
+    padding-top: 200px;
+    margin-top: 60px;
+}
+
+
+
+
+/*--------------------------footer------------------*/
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    background: #000;
+
+}
+.footer h3{
+    font-size: smaller;
+    font-weight: 600;
+    color: rgb(199, 116, 116);
+}
+.footer h4{
+    font-size: 10px;
+    padding-bottom: 8px;
+    color: rgb(252, 249, 249);
+
+}
+.fa {
+    font-size: 70px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Facebook */
+.fa-facebook {
+    color:#3b5998 ;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color:#1DA1F2;
+  }
+/* linkedin*/
+    .fa-linkedin {
+        color:#0e76a8 ;
+      }
+ /* instagram */
+    .fa-instagram {
+        color:linear-gradient(#F58529,#FEDA77,#DD2A7B,#8134AF,#515BD4);
+        padding-top: 7px;
+      }
+.blog-col{
+    width: 100%;
+}
