@@ -9,7 +9,7 @@ Lifestyle
 
 
 *_Project Title_* :
-ecommercewebsite
+Ecommercewebsite
 
 
 
